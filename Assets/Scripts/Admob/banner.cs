@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using GoogleMobileAds.Api;
 
-public class AdMob : MonoBehaviour
+public class banner : MonoBehaviour
 {
     private BannerView bannerView;
     void Start()
@@ -21,14 +21,10 @@ public class AdMob : MonoBehaviour
 #else
             string adUnitId = "unexpected_platform";
 #endif
-        AdSize adSize = new AdSize(300, 250);
-        // Create a 320x50 banner at the top of the screen.
-        this.bannerView = new BannerView(adUnitId, adSize, AdPosition.Bottom);
-        // Create an empty ad request.
+        this.bannerView = new BannerView(adUnitId, AdSize.Banner, AdPosition.Bottom);
 
         AdRequest request = new AdRequest.Builder().Build();
 
-        // Load the banner with the request.
         this.bannerView.LoadAd(request);
     }
 }
