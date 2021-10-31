@@ -8,5 +8,6 @@ public enum SeType
     result,
     perfect,
     good,
-    nogood
+    nogood,
+    Incorrect
 }

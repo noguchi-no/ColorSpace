@@ -194,7 +194,6 @@ public class TAmode : MonoBehaviour
 
     IEnumerator timeCount()
     {
-        Debug.Log(time);
         yield return new WaitForSeconds(1f);
         time++;
         StartCoroutine("timeCount");
