@@ -10,7 +10,7 @@ public class interstitial : MonoBehaviour
     public static int game = 0;
     private void Start()
     {
-        Debug.Log("ƒQ[ƒ€‰ñ”‚Í" + game);
+        Debug.Log("ï¿½Qï¿½[ï¿½ï¿½ï¿½ñ”‚ï¿½" + game);
         if (game == 3)
         {
             GameOver();
@@ -23,7 +23,7 @@ public class interstitial : MonoBehaviour
 #if UNITY_ANDROID
         string adUnitId = "ca-app-pub-3940256099942544/1033173712";
 #elif UNITY_IPHONE
-        string adUnitId = "ca-app-pub-3940256099942544/4411468910";
+        string adUnitId = "ca-app-pub-5858797465901996/9141568909";
 #else
         string adUnitId = "unexpected_platform";
 #endif
